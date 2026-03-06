@@ -27,10 +27,6 @@ public enum Rarity {
     }
 
     public Text colorize(Text text) {
-        if (this.shadowColor == null) {
-            return text.withStyle(style -> style.withColor(this.color.getRGB()));
-        }
-
         return text.withStyle(style -> style.withColor(this.color.getRGB()).withShadowColor(this.shadowColor.getRGB()));
     }
 

@@ -19,11 +19,11 @@ public class ModMenuIntegration implements ModMenuApi {
         return parentScreen -> YetAnotherConfigLib.createBuilder()
             .title(Text.literal("Etchrara"))
             .category(ConfigCategory.createBuilder()
-                .name(Text.literal("Rarity Color"))
+                .name(Text.fromTranslatable("config.category.rarity_color"))
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Common"))
+                    .name(Text.fromTranslatable("config.group.common"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Common Color"))
+                        .name(Text.fromTranslatable("config.option.common_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityCommonColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityCommonColor;
@@ -34,7 +34,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Common Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.common_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityCommonShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityCommonShadowColor;
@@ -46,9 +46,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Uncommon"))
+                    .name(Text.fromTranslatable("config.group.uncommon"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Uncommon Color"))
+                        .name(Text.fromTranslatable("config.option.uncommon_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityUncommonColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityUncommonColor;
@@ -59,7 +59,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Uncommon Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.uncommon_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityUncommonShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityUncommonShadowColor;
@@ -71,9 +71,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Rare"))
+                    .name(Text.fromTranslatable("config.group.rare"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Rare Color"))
+                        .name(Text.fromTranslatable("config.option.rare_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityRareColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityRareColor;
@@ -84,7 +84,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Rare Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.rare_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityRareShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityRareShadowColor;
@@ -96,9 +96,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Epic"))
+                    .name(Text.fromTranslatable("config.group.epic"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Epic Color"))
+                        .name(Text.fromTranslatable("config.option.epic_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityEpicColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityEpicColor;
@@ -109,7 +109,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Epic Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.epic_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityEpicShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityEpicShadowColor;
@@ -121,9 +121,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Legendary"))
+                    .name(Text.fromTranslatable("config.group.legendary"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Legendary Color"))
+                        .name(Text.fromTranslatable("config.option.legendary_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityLegendaryColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityLegendaryColor;
@@ -134,7 +134,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Legendary Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.legendary_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityLegendaryShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityLegendaryShadowColor;
@@ -146,9 +146,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Mythic"))
+                    .name(Text.fromTranslatable("config.group.mythic"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Mythic Color"))
+                        .name(Text.fromTranslatable("config.option.mythic_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityMythicColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityMythicColor;
@@ -159,7 +159,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Mythic Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.mythic_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityMythicShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityMythicShadowColor;
@@ -171,9 +171,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Divine"))
+                    .name(Text.fromTranslatable("config.group.divine"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Divine Color"))
+                        .name(Text.fromTranslatable("config.option.divine_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityDivineColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityDivineColor;
@@ -184,7 +184,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Divine Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.divine_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityDivineShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityDivineShadowColor;
@@ -196,9 +196,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Eternal"))
+                    .name(Text.fromTranslatable("config.group.eternal"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Eternal Color"))
+                        .name(Text.fromTranslatable("config.option.eternal_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityEternalColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityEternalColor;
@@ -209,7 +209,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Eternal Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.eternal_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityEternalShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityEternalShadowColor;
@@ -221,9 +221,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Special"))
+                    .name(Text.fromTranslatable("config.group.special"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Special Color"))
+                        .name(Text.fromTranslatable("config.option.special_color"))
                         .binding(EtchraraClient.DEFAULTS.raritySpecialColor,
                             () -> {
                                 return EtchraraClient.CONFIG.raritySpecialColor;
@@ -234,7 +234,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Special Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.special_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.raritySpecialShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.raritySpecialShadowColor;
@@ -246,9 +246,9 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build())
                     .build())
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Admin"))
+                    .name(Text.fromTranslatable("config.group.admin"))
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Admin Color"))
+                        .name(Text.fromTranslatable("config.option.admin_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityAdminColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityAdminColor;
@@ -259,7 +259,7 @@ public class ModMenuIntegration implements ModMenuApi {
                         .controller(ColorControllerBuilder::create)
                         .build())
                     .option(Option.<Color>createBuilder()
-                        .name(Text.literal("Admin Shadow Color"))
+                        .name(Text.fromTranslatable("config.option.admin_shadow_color"))
                         .binding(EtchraraClient.DEFAULTS.rarityAdminShadowColor,
                             () -> {
                                 return EtchraraClient.CONFIG.rarityAdminShadowColor;
@@ -272,18 +272,18 @@ public class ModMenuIntegration implements ModMenuApi {
                     .build())
                 .build())
             .category(ConfigCategory.createBuilder()
-                .name(Text.literal("Rarity Display"))
+                .name(Text.fromTranslatable("config.category.display"))
                 .group(OptionGroup.createBuilder()
-                    .name(Text.literal("Location"))
+                    .name(Text.fromTranslatable("config.group.location"))
                     .option(Option.<Boolean>createBuilder()
-                        .name(Text.literal("Display in Tooltip"))
-                        .description(OptionDescription.of(Text.literal("In capitalized, bolded letters.")))
-                        .binding(EtchraraClient.DEFAULTS.displayRarityInTooltip,
+                        .name(Text.fromTranslatable("config.option.display_rarity_name_in_tooltip"))
+                        .description(OptionDescription.of(Text.fromTranslatable("config.description.display_rarity_name_in_tooltip")))
+                        .binding(EtchraraClient.DEFAULTS.displayRarityNameInTooltip,
                             () -> {
-                                return EtchraraClient.CONFIG.displayRarityInTooltip;
+                                return EtchraraClient.CONFIG.displayRarityNameInTooltip;
                             },
                             newVal -> {
-                                EtchraraClient.CONFIG.displayRarityInTooltip = newVal;
+                                EtchraraClient.CONFIG.displayRarityNameInTooltip = newVal;
                             })
                         .controller(TickBoxControllerBuilder::create)
                         .build())

@@ -37,5 +37,5 @@ public final class EtchraraConfig {
     @SerialEntry public Color raritySpecialShadowColor      = Rarity.SPECIAL.getShadowColor();
     @SerialEntry public Color rarityAdminColor              = Rarity.ADMIN.getColor();
     @SerialEntry public Color rarityAdminShadowColor        = Rarity.ADMIN.getShadowColor();
-    @SerialEntry public boolean displayRarityInTooltip = true;
+    @SerialEntry public boolean displayRarityNameInTooltip = true;
 }

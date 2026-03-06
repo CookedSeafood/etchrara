@@ -30,15 +30,25 @@ Optionally, rarity name can be displayed in tooltip in capitalized, bolded lette
 ```json
 {
   "rarityCommonColor": 16777215,
+  "rarityCommonShadowColor": 4144959,
   "rarityUncommonColor": 16777045,
+  "rarityUncommonShadowColor": 4144917,
   "rarityRareColor": 5636095,
+  "rarityRareShadowColor": 1392447,
   "rarityEpicColor": 16733695,
+  "rarityEpicShadowColor": 4134207,
   "rarityLegendaryColor": 16755200,
+  "rarityLegendaryShadowColor": 4139520,
   "rarityMythicColor": 13391359,
+  "rarityMythicShadowColor": 3347775,
   "rarityDivineColor": 5636044,
+  "rarityDivineShadowColor": 1392435,
   "rarityEternalColor": 5592405,
+  "rarityEternalShadowColor": 1381653,
   "raritySpecialColor": 16733525,
+  "raritySpecialShadowColor": 4134165,
   "rarityAdminColor": 11141120,
-  "displayRarityInTooltip": true
+  "rarityAdminShadowColor": 2752512,
+  "displayRarityNameInTooltip": true
 }
 ```

@@ -39,7 +39,7 @@ public abstract class ItemStackMixin implements CustomRarityHolder {
         )
     )
     private void addRarityToTooltip(CallbackInfo ci, @Local Consumer<Component> builder) {
-        if (!EtchraraClient.CONFIG.displayRarityInTooltip) {
+        if (!EtchraraClient.CONFIG.displayRarityNameInTooltip) {
             return;
         }
 
