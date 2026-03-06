@@ -1,0 +1,12 @@
+{
+    "item.rarity.common": "COMMON",
+    "item.rarity.uncommon": "UNCOMMON",
+    "item.rarity.rare": "RARE",
+    "item.rarity.epic": "EPIC",
+    "item.rarity.legendary": "LEGENDARY",
+    "item.rarity.mythic": "MYTHIC",
+    "item.rarity.divine": "DIVINE",
+    "item.rarity.eternal": "ETERNAL",
+    "item.rarity.special": "SPECIAL",
+    "item.rarity.admin": "ADMIN"
+}

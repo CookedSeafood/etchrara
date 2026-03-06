@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "id": "etchrara",
+    "version": "${version}",
+    "name": "Etchrara",
+    "description": "A rarity expansion mod providing rarity rendering.",
+    "authors": [
+        {
+            "name": "CookedSeafood",
+            "contact": {
+                "homepage": "https://github.com/CookedSeafood"
+            }
+        }
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/etchrara",
+        "sources": "https://github.com/CookedSeafood/etchrara",
+        "issues": "https://github.com/CookedSeafood/etchrara/issues"
+    },
+    "license": "GNU-GPL-3.0",
+    "icon": "assets/etchrara/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.hederamc.etchrara.Etchrara"
+        ],
+        "client": [
+            "net.hederamc.etchrara.EtchraraClient"
+        ],
+        "modmenu": [
+            "net.hederamc.etchrara.client.config.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "etchrara.mixins.json",
+        {
+            "config": "etchrara.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~26.1-",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
+}

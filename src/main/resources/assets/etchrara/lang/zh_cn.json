@@ -1,0 +1,12 @@
+{
+    "item.rarity.common": "常见",
+    "item.rarity.uncommon": "罕见",
+    "item.rarity.rare": "稀有",
+    "item.rarity.epic": "史诗",
+    "item.rarity.legendary": "传奇",
+    "item.rarity.mythic": "神话",
+    "item.rarity.divine": "神圣",
+    "item.rarity.eternal": "永恒",
+    "item.rarity.special": "特殊",
+    "item.rarity.admin": "管理员"
+}

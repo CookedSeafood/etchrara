@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "net.hederamc.etchrara.client.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "client": [
+        "GuiMixin",
+        "ItemStackMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
