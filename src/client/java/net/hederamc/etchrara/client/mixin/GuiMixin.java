@@ -15,7 +15,7 @@ public abstract class GuiMixin {
     @Shadow private ItemStack lastToolHighlight;
 
     @Redirect(
-        method = "renderSelectedItemName(Lnet/minecraft/client/gui/GuiGraphics;)V",
+        method = "extractSelectedItemName(Lnet/minecraft/client/gui/GuiGraphicsExtractor;)V",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/network/chat/MutableComponent;withStyle(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;"

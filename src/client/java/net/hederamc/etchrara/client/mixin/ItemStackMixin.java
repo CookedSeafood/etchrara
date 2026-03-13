@@ -44,7 +44,8 @@ public abstract class ItemStackMixin implements CustomRarityHolder {
         }
 
         Rarity rarity = Rarity.byNameOrCommon(this.getCustomRarityOrRarity());
-        builder.accept((MutableComponent) rarity.colorize(Text.fromTranslatable("item.rarity." + rarity.getName()))
-                .withStyle(style -> style.withBold(true)));
+        builder.accept((MutableComponent)
+                rarity.colorize(Text.fromTranslatable("item.rarity." + rarity.getName()))
+                        .withStyle(style -> style.withBold(true)));
     }
 }

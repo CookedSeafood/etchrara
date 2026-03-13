@@ -11,12 +11,12 @@ import net.minecraft.resources.Identifier;
 
 public final class EtchraraConfig {
     public static ConfigClassHandler<EtchraraConfig> HANDLER = ConfigClassHandler.createBuilder(EtchraraConfig.class)
-        .id(Identifier.fromNamespaceAndPath(Etchrara.MOD_NAMESPACE, "client_config"))
-        .serializer(config -> GsonConfigSerializerBuilder.create(config)
-            .setPath(FabricLoader.getInstance().getConfigDir().resolve("etchrara.json"))
-            .build()
-        )
-        .build();
+            .id(Identifier.fromNamespaceAndPath(Etchrara.MOD_NAMESPACE, "client_config"))
+            .serializer(
+                    config -> GsonConfigSerializerBuilder.create(config)
+                            .setPath(FabricLoader.getInstance().getConfigDir().resolve("etchrara.json"))
+                            .build())
+            .build();
     @SerialEntry public Color rarityCommonColor             = Rarity.COMMON.getColor();
     @SerialEntry public Color rarityCommonShadowColor       = Rarity.COMMON.getShadowColor();
     @SerialEntry public Color rarityUncommonColor           = Rarity.UNCOMMON.getColor();
